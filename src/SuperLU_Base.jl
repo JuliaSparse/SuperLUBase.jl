@@ -1,6 +1,7 @@
 module SuperLU_Base
 
 using SparseBase
+using CIndices
 # Common definitions for SuperLU, SuperLU_MT, and
 # SueprLU_DIST.
 include("common.jl")
@@ -8,7 +9,6 @@ include("common.jl")
 # convert and unsafe_convert definitions for formats.
 
 # NOTE: S *must* outlive the conversion.
-
 function Base.unsafe_convert(
     ::Type{<:Common.NCformat}, S::SparseBase.CSCStore{Tv, CIndex{Ti}}
 ) where {Tv, Ti}

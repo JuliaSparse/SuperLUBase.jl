@@ -1,6 +1,7 @@
 module SuperLU_Base
 
 using SparseBase
+using SparseBase: nstored
 using CIndices
 # Common definitions for SuperLU, SuperLU_MT, and
 # SueprLU_DIST.

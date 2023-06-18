@@ -1,0 +1,13 @@
+name = "SuperLU_Base"
+uuid = "79fc8b2a-9fec-41f5-a0c4-660a4203283a"
+authors = ["Raye Kimmerer <kimmerer@mit.edu>"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.9"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

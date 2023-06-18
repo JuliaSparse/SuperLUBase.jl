@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = SuperLU_Base
+CurrentModule = SuperLUBase
 ```
 
-# SuperLU_Base
+# SuperLUBase
 
-Documentation for [SuperLU_Base](https://github.com/Wimmerer/SuperLU_Base.jl).
+Documentation for [SuperLUBase](https://github.com/Wimmerer/SuperLUBase.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [SuperLU_Base]
+Modules = [SuperLUBase]
 ```

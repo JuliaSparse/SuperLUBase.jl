@@ -1,16 +1,16 @@
-using SuperLU_Base
+using SuperLUBase
 using Documenter
 
-DocMeta.setdocmeta!(SuperLU_Base, :DocTestSetup, :(using SuperLU_Base); recursive=true)
+DocMeta.setdocmeta!(SuperLUBase, :DocTestSetup, :(using SuperLUBase); recursive=true)
 
 makedocs(;
-    modules=[SuperLU_Base],
+    modules=[SuperLUBase],
     authors="Raye Kimmerer <kimmerer@mit.edu>",
-    repo="https://github.com/Wimmerer/SuperLU_Base.jl/blob/{commit}{path}#{line}",
-    sitename="SuperLU_Base.jl",
+    repo="https://github.com/Wimmerer/SuperLUBase.jl/blob/{commit}{path}#{line}",
+    sitename="SuperLUBase.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://Wimmerer.github.io/SuperLU_Base.jl",
+        canonical="https://Wimmerer.github.io/SuperLUBase.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -20,6 +20,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/Wimmerer/SuperLU_Base.jl",
+    repo="github.com/Wimmerer/SuperLUBase.jl",
     devbranch="main",
 )

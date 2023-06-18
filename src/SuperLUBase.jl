@@ -1,4 +1,4 @@
-module SuperLU_Base
+module SuperLUBase
 
 using SparseBase
 using SparseBase: nstored

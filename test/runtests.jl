@@ -1,6 +1,6 @@
-using SuperLU_Base
+using SuperLUBase
 using Test
 
-@testset "SuperLU_Base.jl" begin
+@testset "SuperLUBase.jl" begin
     # Write your tests here.
 end

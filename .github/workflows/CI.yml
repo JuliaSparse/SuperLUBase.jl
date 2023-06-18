@@ -57,6 +57,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using SuperLU_Base
-            DocMeta.setdocmeta!(SuperLU_Base, :DocTestSetup, :(using SuperLU_Base); recursive=true)
-            doctest(SuperLU_Base)'
+            using SuperLUBase
+            DocMeta.setdocmeta!(SuperLUBase, :DocTestSetup, :(using SuperLUBase); recursive=true)
+            doctest(SuperLUBase)'

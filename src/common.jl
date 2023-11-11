@@ -333,7 +333,7 @@ const flops_t = Cfloat
 
 const Logical = Cuchar
 
-struct SuperLUStat_t{I}
+mutable struct SuperLUStat_t{I}
     panel_histo::Ptr{Cint}
     utime::Ptr{Cdouble}
     ops::Ptr{flops_t}
@@ -497,7 +497,7 @@ struct packLUInfo_t{I}
     lPanelInfo::Ptr{lPanelInfo_t{I}}
 end
 
-struct sScalePermstruct_t{I}
+mutable struct sScalePermstruct_t{I}
     DiagScale::DiagScale_t
     R::Ptr{Cfloat}
     C::Ptr{Cfloat}
@@ -602,7 +602,7 @@ struct Glu_persist_t{I}
     supno::Ptr{I}
 end
 
-struct sLUstruct_t{I}
+mutable struct sLUstruct_t{I}
     etree::Ptr{I}
     Glu_persist::Ptr{Glu_persist_t{I}}
     Llu::Ptr{sLocalLU_t{I}}
@@ -641,7 +641,7 @@ struct pxgstrs_comm_t{I}
     recv_dbuf2::Ptr{Cvoid}
 end
 
-struct sSOLVEstruct_t{I}
+mutable struct sSOLVEstruct_t{I}
     row_to_proc::Ptr{I}
     inv_perm_c::Ptr{I}
     num_diag_procs::I
@@ -979,7 +979,7 @@ struct psymbfact_stat_t{I}
     allocMem::Cfloat
 end
 
-struct dScalePermstruct_t{I}
+mutable struct dScalePermstruct_t{I}
     DiagScale::DiagScale_t
     R::Ptr{Cdouble}
     C::Ptr{Cdouble}
@@ -1086,7 +1086,7 @@ struct dLocalLU_t{I}
     inv::I
 end
 
-struct dLUstruct_t{I}
+mutable struct dLUstruct_t{I}
     etree::Ptr{I}
     Glu_persist::Ptr{Glu_persist_t{I}}
     Llu::Ptr{dLocalLU_t{I}}
@@ -1107,7 +1107,7 @@ struct pdgsmv_comm_t{I}
     TotalValSend::I
 end
 
-struct dSOLVEstruct_t{I}
+mutable struct dSOLVEstruct_t{I}
     row_to_proc::Ptr{I}
     inv_perm_c::Ptr{I}
     num_diag_procs::I
@@ -1163,7 +1163,7 @@ struct doublecomplex
     r::Cdouble
     i::Cdouble
 end
-struct zScalePermstruct_t{I}
+mutable struct zScalePermstruct_t{I}
     DiagScale::DiagScale_t
     R::Ptr{Cdouble}
     C::Ptr{Cdouble}
@@ -1258,7 +1258,7 @@ struct zLocalLU_t{I}
     inv::I
 end
 
-struct zLUstruct_t{I}
+mutable struct zLUstruct_t{I}
     etree::Ptr{I}
     Glu_persist::Ptr{Glu_persist_t{I}}
     Llu::Ptr{zLocalLU_t{I}}
@@ -1279,7 +1279,7 @@ struct pzgsmv_comm_t{I}
     TotalValSend::I
 end
 
-struct zSOLVEstruct_t{I}
+mutable struct zSOLVEstruct_t{I}
     row_to_proc::Ptr{I}
     inv_perm_c::Ptr{I}
     num_diag_procs::I
